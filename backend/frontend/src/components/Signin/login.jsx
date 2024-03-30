@@ -19,7 +19,7 @@ const Login = () => {
         e.preventDefault();
         // console.log(window.location.origin);
         try {
-            const response = await axios.post(`${window.location.origin}/api/r1/login`, Inputs,{ timeout: 1200000 });
+            const response = await axios.post(`https://todo-mern-stack-jo8o.onrender.com/api/r1/login`, Inputs,{ timeout: 1200000 });
             if (response.data && response.data.others && response.data.others._id) {
                 alert(response.data.message);
                 console.log(response.data.others._id);

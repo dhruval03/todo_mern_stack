@@ -29,7 +29,7 @@ const Todo = () => {
         } else {
             if (userObjId) {
                 try {
-                    const response = await axios.post(`${window.location.origin}/api/r2/addTask`, {
+                    const response = await axios.post(`https://todo-mern-stack-jo8o.onrender.com/api/r2/addTask`, {
                         Title: inputs.title,
                         Body: inputs.body,
                         Deadline: inputs.deadline,
@@ -53,7 +53,7 @@ const Todo = () => {
     const fetchData = async () => {
         if (userObjId) {
             try {
-                const response = await axios.get(`${window.location.origin}/api/r2/getTask/${userObjId}`);
+                const response = await axios.get(`https://todo-mern-stack-jo8o.onrender.com/api/r2/getTask/${userObjId}`);
                 setTasks(response.data.tasks || []);
             } catch (error) {
                 console.error("Error fetching tasks:", error);
@@ -65,7 +65,7 @@ const Todo = () => {
     const handleDelete = async (id) => {
         try {
             // console.log("Deleting task with ID:", id);
-            await axios.delete(`${window.location.origin}/api/r2/deleteTask/${id}`, { data: { userId: userObjId } });
+            await axios.delete(`https://todo-mern-stack-jo8o.onrender.com/api/r2/deleteTask/${id}`, { data: { userId: userObjId } });
             console.log("Task deleted successfully!");
             toast.success("Task deleted successfully!");
             fetchData(); // Fetch updated tasks after deletion

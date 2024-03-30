@@ -14,7 +14,7 @@ const Signup = () => {
 
     const submit = async (e) => {
         e.preventDefault();
-        await axios.post(`${window.location.origin}/api/r1/register`, Inputs,{ timeout: 1200000 })
+        await axios.post(`https://todo-mern-stack-jo8o.onrender.com/api/r1/register`, Inputs,{ timeout: 1200000 })
             .then((response) => {
                 if(response.data.message == "User already exists"){
                     alert(response.data.message);

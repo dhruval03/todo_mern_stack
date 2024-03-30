@@ -25,7 +25,7 @@ const Update = () => {
 
     const handleUpdate = async () => {
         try {
-            const response = await fetch(`${window.location.origin}/api/r2/updateTask/${taskData.id}`, {
+            const response = await fetch(`https://todo-mern-stack-jo8o.onrender.com/api/r2/updateTask/${taskData.id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
