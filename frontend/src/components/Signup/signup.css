@@ -1,0 +1,40 @@
+.signup{
+    width: 100%;
+    height: 100vh;
+}
+
+.column
+{
+    height: 100vh;
+}
+    
+.btn-signup{
+    background-color: #0c1035;
+    border-radius: 10px;
+    /* width: 100px; */
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.btn-signup:hover
+{
+    color: rgb(252, 230, 33);
+}
+
+.custom-form
+{
+    border-radius: 15px;
+    border: 2px  solid #0c1035;
+    
+}
+
+.google
+{
+    border: 1px  solid #0c1035;
+    font-weight: 30px;
+}
+.google:hover
+{
+    background-color: #ebebeb;
+}

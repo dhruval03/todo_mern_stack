@@ -1,0 +1,23 @@
+.home{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aliceblue; */
+}
+
+.home h1{
+    font-size: 60px;
+}
+.home p{
+    font-size: 22px;
+}
+.home-btn{
+    background-color: #0c1035;
+    border-radius: 10px;
+    /* width: 100px; */
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+.home-btn:hover{
+    color: rgb(252, 230, 33);
+}

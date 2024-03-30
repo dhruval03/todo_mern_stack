@@ -1,0 +1,41 @@
+.todo {
+    width: 100%;
+    min-height: 100vh;
+    max-height: auto !important;
+}
+
+.custom-form-task {
+    border-radius: 7px;
+    /* border: 2px  solid #0c1035; */
+    box-shadow: #000000 0px 5px 15px;
+}
+
+#textarea,
+#deadline {
+    display: none;
+}
+
+.todo-cards {
+    border: 1px solid #0c1035;
+    border-radius: 4px;
+}
+
+.todo-card-p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+
+/* todo update css  */
+
+.todo-update
+{
+    width: 100%;
+    height: 78vh;
+}
+
+.todo-task-update{
+    border: none;
+    border-radius: 5px;
+}

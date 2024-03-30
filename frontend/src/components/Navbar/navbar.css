@@ -1,0 +1,20 @@
+.navbar-brand a:hover
+{
+    color: rgb(0, 0, 0);
+}
+.navbar-brand a{
+    color: rgb(12, 16, 53);
+}
+.btn-nav{
+    background-color: #0c1035;
+    border-radius: 10px;
+    width: 80px;
+    text-align: center;
+}
+
+.btn-nav a{
+    color: #ffffff !important;
+}
+.btn-nav a:hover{
+    color: rgb(252, 230, 33) !important;
+}
