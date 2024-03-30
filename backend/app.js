@@ -11,7 +11,7 @@ const list = require("./routes/todo_list");
 app.use(express.json());
 app.use(cors(
     {
-        origin:["https://todo-mern-stack-theta.vercel.app"],
+        origin:["https://todo-mern-stack-pi.vercel.app"],
         methods:["get", "post", "put", "delete"],
         credentials: true
     }

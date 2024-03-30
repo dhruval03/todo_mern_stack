@@ -37,5 +37,7 @@ router.post("/login", async (req, res) => {
         res.status(500).json({ message: "An error occurred during login" });
     }
 });
-
+router.post("/hello"), async (req, res) => {
+    res.send("Welcome");
+}
 module.exports = router;
