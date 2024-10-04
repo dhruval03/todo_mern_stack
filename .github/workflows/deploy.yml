@@ -28,5 +28,4 @@ jobs:
         run: |
           pm2 stop all  # Stop existing processes
           pm2 start npm --name "mern-app" -- run start  # Start the app using PM2
-        env:
-          NODE_ENV: production
+       
